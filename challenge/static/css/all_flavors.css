@@ -1,0 +1,145 @@
+.form {
+    display: inline-block;
+    margin-top: -6.3%;
+    position: relative;
+    margin-right: 2.5%;
+    margin-left: auto;
+}
+
+.inlineWrap {
+    position: relative;
+    display: inline-flex;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+.flavorWrapper {
+    width: 250px;
+    height: 150px;
+    text-align: center;
+    display: block;
+    margin: 5px;
+    margin-right: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    position: relative; 
+    margin-bottom: 70px;
+}
+
+.headline {
+    font-size: 60px;
+    text-align: left;
+    margin-left: 2.5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    display: block;
+    width: 80%;
+    font-size: 5vw;
+}
+
+.placeholder {
+    width: 250px;
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: border 0.25s;
+    border: 5px solid rgba(0, 0, 0, 0)
+}
+
+.placeholder:hover {
+    border: 5px solid black;
+}
+
+.placeholderText {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.25s;
+}
+
+.flavorIcon {
+    display: block;
+    z-index: 50;
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    font-size: 35px;
+    color: white;
+    background-color: white;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+    display: inline;
+    margin-top: 10px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li {
+    display: inline;
+}
+
+
+.content {
+    display: inline-block;
+    width: 66%;
+    margin-left: 2.5%;
+    margin-right: auto;
+    margin-top: 0%;
+    text-align: left;
+    position: relative;
+}
+
+@media only screen and (max-width: 1275px) {
+    .content {
+        width: 50%;
+        margin-right: 2.5%;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .content {
+        margin: 0 auto;
+        text-align: center;
+        width: 95%;
+    }
+
+    .headline {
+        width: auto;
+        font-size: 7.5vw;
+    }
+
+    .form {
+        position: relative;
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .headline {
+        font-size: 10vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        margin: 0 auto;
+        width: 90%;
+        text-align: center;
+    }
+    .headline {
+        font-size: 13vw;
+    }
+}

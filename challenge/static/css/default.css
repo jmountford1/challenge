@@ -1,0 +1,565 @@
+/* universal styling for all documents that use this template */
+body {
+    font-family: 'Poppins';
+    background-color: rgba(116, 120, 128, 0.1);
+}
+
+header {
+    z-index: 5;
+}
+
+.headerLogo {
+    width: 250px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+/*navbar styling*/
+
+/*a.icon {
+    display: none;
+}*/
+
+nav {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+.navBar {
+    width: 95%;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 105, 148, .8);
+    position: relative;
+    z-index: 35;
+}
+
+.toplink {
+    margin-left: 35px;
+    margin-right: 35px;
+    text-decoration: none;
+    color: white;
+    font-family: Poppins;
+    font-size: 18px;
+    transition: color 1s;
+    font-weight: 400;
+    width: auto;
+    position: relative;
+    z-index: 40;
+}
+
+.toplink::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.toplink:hover::before {
+    transform: scaleX(1);
+}
+
+.toplink:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.toplink:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.downArrow {
+    font-size: 13px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+a.icon {
+    display: none;
+}
+
+/*footer styling*/
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(116, 120, 128, 0.1);
+}
+
+.footerElements {
+    display: inline-block;
+    width: 95%;
+    position: relative;
+    height: 85px;
+    color: black;
+}
+
+.footerText {
+    width: auto;
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: black;
+}
+
+.footerLogo {
+    width: 150px;
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-radius: 2px;
+}
+
+/*form styling*/
+
+.form {
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: rgba(0, 105, 148, .6);
+}
+
+.formText {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    color: white;
+}
+
+textarea {
+    height: 125px;
+}
+
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px hsl(0,0%,0%);
+}
+
+#email, #name, #message, select {
+    transition: box-shadow 0.45s;
+}
+
+#email:focus, #name:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px hsl(0,0%,0%);
+}
+
+select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px hsl(0,0%,0%);
+}
+
+select, textarea, input {
+    width: 250px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 5px;
+}
+
+.newsCheck {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.checkbox {
+    display: inline-block;
+}
+
+#newsletter {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    position: relative;
+    top: 4px;
+}
+
+#newsletter:checked {
+    background-color: rgba(0, 105, 148, 1);
+    accent-color: rgba(0, 105, 148, 1);
+}
+
+.submit {
+    width: 150px;
+    height: 50px;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    transition: color 0.25s, background-color 0.5s, border 0.25s;
+    border: none;
+}
+
+.submit:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 105, 148, 1);
+}
+
+option:hover {
+    color: rgba(0, 105, 148, 1);
+}
+
+.newsText {
+    color: white;
+}
+
+/*styling for the checkbox*/
+
+/* styling for hidden UI elements, such as the dropdown navigation */
+.capabilitiesWrap {
+    width: 200px;
+    height: 145px;
+    display: inline-block;
+    position: relative;
+}
+
+.menuItem {
+    width: 100%;
+    display: inline-block;
+    margin-top: 0px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    text-decoration: none;
+    color: #AFDCEB;
+    min-height: 40px;
+    font-size: 22px;
+    z-index: 5;
+    opacity: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: color 0.5s, background-color 0.25s;
+}
+
+.menuItem:hover {
+    cursor: pointer;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.capabilitiesMenu {
+    height: 130px;
+    width: 210px;
+    margin-top: 50px;
+    position: absolute;
+    top: -10px;
+    left: 40px;
+    transition: height 0.25s;
+    background-color: rgba(0, 105, 148, 0.9);
+    opacity: 0%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 3;
+    display: none;
+}
+
+.flavorsWrap {
+    width: 190px;
+    display: inline-block;
+    position: relative;
+}
+
+.flavorsMenu {
+    width: 190px;
+    margin-top: 50px;
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    opacity: 0%;
+    background-color: rgba(0, 105, 148, 0.9);
+    text-align: left;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 3;
+    display: none;
+}
+
+.flavorItems {
+    list-style-type: none;
+}
+
+.navList {
+    padding-left: 0px;
+}
+
+.dropDownHoverMenu {
+    display: block;
+    animation: dropAnimationMenu;
+    animation-fill-mode: forwards;
+    animation-duration: 0.25s;
+}
+
+.dropDownHoverItem {
+    display: block;
+    animation: dropAnimationItem;
+    animation-fill-mode: forwards;
+    animation-duration: 2.5s;
+}
+
+/*animation css styling*/
+
+@keyframes dropAnimationMenu {
+    0% {
+        opacity: 0%;
+        height: 0px;
+    }
+
+    100% {
+        opacity: 100%;
+        height: 129px;
+    }
+}
+@keyframes dropAnimationItem {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.dropItemAnimation {
+    animation: dropAnimationItem;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+.dynamicDropAnimationMenu {
+    opacity: 0%;
+    display: block;
+    animation: dynamicDropMenuAnimation;
+    animation-fill-mode: forwards;
+    animation-duration: 0.25s;
+}
+
+.fadeInElement {
+    animation: fadeIn;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+/*this is for the responsive navbar styling that appears on mobile & smaller screens*/
+@media screen and (max-width: 800px) {
+    .toplink {
+        display: none;
+        margin-top: 10px;
+        font-size: 30px;
+    }
+    a.icon {
+        display: block;
+    }
+    .icon {
+        color: black;
+        font-size: 50px;
+        position: absolute;
+        right: 5%;
+        display: block;
+        top: -110px;
+        transition: color 1s;
+    }
+    .icon:hover {
+        color: rgba(0, 105, 148, 0.8);
+        cursor: pointer;
+    }
+
+    .navBar {
+        height: 15px;
+    }
+    nav {
+        width: 100%;
+        text-align: center;
+        height: 40px;
+    }
+    .navBar.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .capabilitiesWrap {
+        width: 100%;
+        height: auto;
+    }
+    .flavorsWrap {
+        width: 100%;
+    }
+    .toplink {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }.toplink::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0%;
+    height: 0px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    }
+    .capabilitiesMenu {
+        position: relative;
+        opacity: 0%;
+        display: none;
+        margin-top: 10px;
+        top: auto;
+        left: auto;
+        margin: 0 auto;
+        background-color: rgba(0, 105, 148, 0);
+    }
+    .menuItem {
+        padding-left: 0px;
+        background-color: rgba(0, 105, 148, 0);
+        font-size: 22px;
+        
+    }
+    .flavorsMenu {
+        position: relative;
+        opacity: 0%;
+        display: none;
+        margin-top: 10px;
+        top: auto;
+        left: auto;
+        margin: 0 auto;
+        background-color: rgba(0, 105, 148, 0);
+    }
+    .capabilityItems {
+        background-color: rgba(0, 105, 148, 0);
+        
+    }
+    .flavorItems {
+        background-color: rgba(0, 105, 148, 0);
+    }
+}
+
+.expandMobileMenu {
+    animation: expandMobileMenu;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+}
+
+@keyframes expandMobileMenu {
+    0% {
+        height: 15px;
+        background-color: rgba(0, 105, 148, .8);
+    }
+    100% {
+        height: 240px;
+        background-color: rgba(0, 105, 148, 1);
+    }
+}
+
+.collapseMobile menu {
+    animation: collapseMobileMenu;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+}
+
+@keyframes collapseMobileMenu {
+    0% {
+        height: 180px;
+    }
+    100% {
+        height: 15px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    footer {
+        min-width: 350px;
+    }
+    .footerElements {
+        height: 125px;
+    }
+    .footerText {
+        display: block;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        left: auto;
+        top: 75%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .footerLogo {
+        display: block;
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        right: auto;
+        top: 5%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
+
+.colorChange {
+    animation: colorChange;
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s;
+}
+
+@keyframes colorChange {
+    0% {
+        color: black;
+    }
+    100% {
+        color: rgba(0, 105, 148, .8);
+    }
+}
+
+.reverseColorChange {
+    animation: reverseColorChange;
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s;
+}
+
+@keyframes reverseColorChange {
+    0% {
+        color: rgba(0, 105, 148, .8);
+    }
+    100% {
+        color: black;
+    }
+}

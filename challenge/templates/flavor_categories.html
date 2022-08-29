@@ -1,0 +1,18 @@
+{% extends "base_template.html" %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/individual_flavors.css' %}">
+
+<div class="content">
+    <h1 class="headline">{{ selected_category }}</h1>
+    {% if flavors_in_category %}
+    <ul id="flavorList" class="flavorList">
+        {% for flavor in flavors_in_category %}
+        <li class="individualFlavors">{{ flavor }}</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>There are no flavors!</p>
+    {% endif %}
+</div>
+{% endblock %}

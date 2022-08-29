@@ -1,0 +1,88 @@
+.inlineWrap {
+    position: relative;
+    display: inline-flex;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.form {
+    display: inline-block;
+    margin-top: 20px;
+    position: relative;
+    margin-right: 2.5%;
+    margin-left: auto;
+}
+
+.content {
+    display: inline-block;
+    width: 66%;
+    margin-left: 2.5%;
+    margin-right: auto;
+    margin-top: 0%;
+    text-align: left;
+    position: relative;
+}
+
+.headline {
+    font-size: 4vw;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    display: block;
+    width: 80%;
+}
+
+.flavorList {
+    padding-left: 0px;
+    position: relative;
+}
+
+.individualFlavors {
+    position: relative;
+    margin-left: 3%;
+    font-size: 1.35vw;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 1100px) {
+    .content {
+        width: 50%;
+    }
+    .headline {
+        font-size: 6vw;
+    }
+    .individualFlavors {
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .headline {
+        font-size: 10vw;
+    }
+    .individualFlavors {
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .content {
+        width: 100%;
+    }
+    .form {
+        margin-top: 20px;
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .headline {
+        font-size: 12vw;
+    }
+    .individualFlavors {
+        font-size: 5vw;
+    }
+    .flavorList {
+        margin-left: 12px;
+    }
+}

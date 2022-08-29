@@ -1,0 +1,27 @@
+{% extends "base_template.html" %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/all_flavors.css' %}">
+<h1 class="headline">Flavors</h1>
+<div class="content">
+	{% if categories %}
+<ul>
+	{% for flavor in categories %}
+<li>
+	<div class="flavorWrapper">
+		<a class="flavorLink" href="{{ flavor.slug }}">
+		<div class="placeholder"><span class="flavorIcon"></span></div></a>
+		<br>
+	<a class="placeholderText" href="{{ flavor.slug }}">{{ flavor.name }}</a>
+		</div>
+	</li>
+	{% endfor %}
+	</ul>
+	{% else %}
+	<p>There are no flavors!</p>
+	{% endif %}
+</div>
+
+	<script src="{% static 'scripts/colorChange.js' %}" defer>
+    </script>
+{% endblock %}
